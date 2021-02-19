@@ -1,4 +1,3 @@
-console.log('scrpt');
 const keys = document.querySelectorAll('.key');
 
 function playSound(event) {
@@ -16,4 +15,4 @@ function removeTransition(event) {
 }
 
 keys.forEach((key) => key.addEventListener('transitionend', removeTransition));
-window.addEventListener('keydown', playSound(e));
+window.addEventListener('keydown', playSound);
